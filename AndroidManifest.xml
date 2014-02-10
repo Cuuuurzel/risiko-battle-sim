@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cuuuurzel.risiko_battle_sim"
+    android:versionCode="9"
+    android:versionName="2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cuuuurzel.risiko_battle_sim.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cuuuurzel.risiko_battle_sim.BattleResultActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/battle_result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cuuuurzel.risiko_battle_sim.StepByStepActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/step_by_step"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cuuuurzel.risiko_battle_sim.SimulationActivity"
+            android:label="@string/simulation"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

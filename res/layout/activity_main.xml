@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnFast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextView02"
+        android:onClick="showFightResult"
+        android:text="@string/fast_result" />
+
+    <Button
+        android:id="@+id/btnStepByStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnFast"
+        android:layout_alignRight="@+id/btnFast"
+        android:layout_below="@+id/btnFast"
+        android:onClick="fightStepByStep"
+        android:text="@string/step_by_step" />
+
+    <Button
+        android:id="@+id/btnSim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnStepByStep"
+        android:layout_alignRight="@+id/btnStepByStep"
+        android:layout_below="@+id/btnStepByStep"
+        android:onClick="showSimulationResult"
+        android:text="@string/run_sim" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSim"
+        android:layout_alignRight="@+id/btnSim"
+        android:layout_below="@+id/btnSim" 
+        android:orientation="horizontal" >
+        
+	    <Button
+	        android:id="@+id/btnShare"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:onClick="share"
+	        android:text="@string/share" />
+	
+	    <Button
+	        android:id="@+id/btnMore"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:onClick="showMyApps"
+	        android:text="@string/more_apps" />
+	</LinearLayout>
+	
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/actions"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edtDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnDecDef"
+        android:layout_alignBottom="@+id/btnDecDef"
+        android:layout_alignLeft="@+id/edtAtk"
+        android:layout_toLeftOf="@+id/btnIncDef"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/one" />
+
+    <Button
+        android:id="@+id/btnIncDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextView01"
+        android:onClick="incDef"
+        android:text="@string/plus" />
+
+    <Button
+        android:id="@+id/btnIncAtk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnDecAtk"
+        android:layout_alignBottom="@+id/btnDecAtk"
+        android:layout_alignParentRight="true"
+        android:onClick="incAtk"
+        android:text="@string/plus" />
+
+    <EditText
+        android:id="@+id/edtAtk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnDecAtk"
+        android:layout_alignBottom="@+id/btnDecAtk"
+        android:layout_toLeftOf="@+id/btnIncAtk"
+        android:layout_toRightOf="@+id/btnDecAtk"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/one" />
+
+    <Button
+        android:id="@+id/btnDecAtk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtAtkStats"
+        android:onClick="decAtk"
+        android:text="@string/minus" />
+
+    <Button
+        android:id="@+id/btnDecDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnIncDef"
+        android:layout_alignBottom="@+id/btnIncDef"
+        android:layout_alignParentLeft="true"
+        android:onClick="decDef"
+        android:text="@string/minus" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/defender"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/edtAtkStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIncDef"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/attacker"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

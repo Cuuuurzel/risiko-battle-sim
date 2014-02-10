@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Commons -->
+    <string name="app_name">Risiko Battle Sim</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="battle_result">Risultato Battaglia</string>
+    <string name="step_by_step">Battaglia passo-passo</string>
+    <string name="simulation">Risultato Simulazione</string>
+    <string name="defender">Difensore</string>
+    <string name="attacker">Attaccante</string>
+	<string name="troop">truppa</string>
+	<string name="troops">truppe</string>
+    <string name="fast_result">Vai al risultato</string>
+	<string name="attacker_won">L\'attaccante vince!!</string>
+	<string name="defender_won">Il difensore vince!!</string>	
+    
+    <!-- Main Activity strings -->
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="one">1</string>
+    <string name="actions">Azioni</string>
+    <string name="run_sim">Avvia simulazione</string>
+    
+    <!-- Battle Result strings -->
+	<string name="round">turno</string>
+	<string name="rounds">turni</string>
+	<string name="which_has_lost">di cui ne ha perse</string>
+	<string name="the_battle_lasted">La battaglia è durata</string>
+	<string name="the_attacker_used">L\'attaccante ha usato</string>
+	<string name="the_defender_used">Il difensore ha usato</string>
+	
+    <!-- Simulation strings -->
+	<string name="chance">Probabilità di vittoria</string>
+	<string name="without_losses">senza perdite</string>
+	<string name="avg_rounds">Numero medio di turni passati prima della vittoria</string>
+	<string name="avg_losses">Numero medio di perdite</string>
+	
+	<!-- Step by Step strings -->
+	<string name="last_result">Ultimo risultato</string>
+	<string name="last_losses">Ultime perdite</string>
+	<string name="empty_field">----</string>
+	<string name="click_next">Fai click su \'Prossimo Turno\'</string>
+	<string name="click_result">Fai click su \'Risultato\' per maggiori dettagli</string>
+	<string name="next_round">Prossimo turno</string>
+	<string name="st">°</string>
+	<string name="nd">°</string>
+	<string name="rd">°</string>
+	<string name="th">°</string>
+	<string name="lasted">rimasta</string>
+	<string name="lasted_plural">rimaste</string>
+	<string name="out_of">su</string>
+	<string name="round_result">tiro di dadi</string>
+	
+	<!-- Sharing -->
+	<string name="more_apps">Altre app</string>
+	<string name="share">Condividi</string>
+	<string name="share_msg">Tool comodo per Risiko :</string>	
+	<string name="play_store_link">
+		https://play.google.com/store/apps/details?id=com.cuuuurzel.risiko_battle_sim
+	</string>
+</resources>
