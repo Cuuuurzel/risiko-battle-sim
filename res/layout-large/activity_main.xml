@@ -89,7 +89,7 @@
         android:text="@string/attacker"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-   	<LinearLayout
+    <LinearLayout
         android:id="@+id/buttons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -103,36 +103,27 @@
             android:gravity="center"
             android:text="@string/actions"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-        
-        <LinearLayout
+
+        <Button
+            android:id="@+id/btnFast"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:onClick="showFightResult"
+            android:text="@string/fast_result" />
 
-            <Button
-                android:id="@+id/btnFast"
-                android:layout_width="0dip"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:onClick="showFightResult"
-                android:text="@string/fast_result" />
+        <Button
+            android:id="@+id/btnStepByStep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fightStepByStep"
+            android:text="@string/step_by_step" />
 
-            <Button
-                android:id="@+id/btnStepByStep"
-                android:layout_width="0dip"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:onClick="fightStepByStep"
-                android:text="@string/step_by_step" />
-
-            <Button
-                android:id="@+id/btnSim"
-                android:layout_width="0dip"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:onClick="showSimulationResult"
-                android:text="@string/run_sim" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/btnSim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showSimulationResult"
+            android:text="@string/run_sim" />
 
         <LinearLayout
             android:layout_width="match_parent"

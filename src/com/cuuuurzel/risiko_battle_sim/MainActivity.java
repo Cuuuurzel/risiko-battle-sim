@@ -1,5 +1,7 @@
 package com.cuuuurzel.risiko_battle_sim;
 
+import com.google.android.gms.ads.*;
+
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -10,14 +12,36 @@ import android.text.Spanned;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 
 public class MainActivity extends Activity {
 
+	private AdView adView;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		setEditTextFilters();
+		
+	    // Create the adView.
+	    adView = new AdView(this);
+	    adView.setAdUnitId( "ca-app-pub-5375119382292697/6310642368" );
+	    adView.setAdSize(AdSize.BANNER);
+
+	    // Lookup your LinearLayout assuming it's been given
+	    // the attribute android:id="@+id/mainLayout".
+	    LinearLayout layout = (LinearLayout) findViewById( R.id.buttons );
+
+	    // Add the adView to it.
+	    layout.addView( adView, 0 );
+
+	    // Initiate a generic request.
+	    AdRequest adRequest = new AdRequest.Builder().build();
+
+	    // Load the adView with the ad request.
+	    adView.loadAd(adRequest);
+
 	}
 
 	public void showMyApps(View v) {

@@ -2,7 +2,7 @@
 <resources>
 
     <!-- Commons -->
-    <string name="app_name">Risiko Battle Sim</string>
+    <string name="app_name">Risiko Sim Free</string>
     <string name="action_settings">Impostazioni</string>
     <string name="battle_result">Risultato Battaglia</string>
     <string name="step_by_step">Battaglia passo-passo</string>
